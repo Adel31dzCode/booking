@@ -258,10 +258,11 @@ nav {
 }
 
 #defenition_section h1 {
-  color: #fff;
   font-family: var(--pro-font);
   font-size: 42px;
   padding: 20px;
+  -webkit-text-stroke: 2px #000000;
+  color: transparent;
 }
 #defenition_section p {
   color: var(--global-color);
