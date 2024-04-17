@@ -325,6 +325,7 @@ nav {
   font-size: 14px;
   color: #767676;
   font-family: var(--pro-font);
+  user-select: none;
 }
 .counter {
   padding-left: 20px;
