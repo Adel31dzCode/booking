@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <!-- META Tags Start -->
     <meta charset="UTF-8" />
@@ -9,43 +9,45 @@
     <!-- Css Tags  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style_ar.css" />
 
     <!-- Title Tag -->
     <link rel="shortcut icon" href="img/logo1-bg.png" type="image/x-icon">
-    <title>Brotswav | Book Your Room Right Now!</title>
+    <title>Dbr 3lia | Book Your Room Right Now!</title>
   </head>
   <body>
     <!-- NavBar Tag Start -->
 
     <nav id="navbr">
-      <img id="navLink" src="img/logo1-bg.png" alt="logo" />
+      <a href="">
+        <img id="navLink" src="img/logo1-bg.png" alt="logo" />
+      </a>
 
       <ul id="links">
-        <li id="emotion1" class="insteadLink">Booking
+        <li id="emotion1" class="insteadLink">حجز
           <i class="fa-solid fa-sort-down"></i>
 
           <div id="emotion2" class="popup">
             <ul class="popupLinks">
-              <li class="poplinkinstead">hotels</li>
+              <li class="poplinkinstead">فندق</li>
               <hr class="bearLine" />
-              <li class="poplinkinstead">hotels</li>
+              <li class="poplinkinstead">فندق</li>
               <hr class="bearLine" />
-              <li class="poplinkinstead">hotels</li>
+              <li class="poplinkinstead">فندق</li>
             </ul>
           </div>
         </li>
 
         <li id="emotion1" class="insteadLink">
-          Services <i class="fa-solid fa-sort-down"></i>
+          خدمات <i class="fa-solid fa-sort-down"></i>
 
           <div id="emotion2" class="popup">
             <ul class="popupLinks">
-              <li class="poplinkinstead">traveling</li>
+              <li class="poplinkinstead">سفر</li>
               <hr class="bearLine" />
-              <li class="poplinkinstead">traveling</li>
+              <li class="poplinkinstead">سفر</li>
               <hr class="bearLine" />
-              <li class="poplinkinstead">traveling</li>
+              <li class="poplinkinstead">سفر</li>
             </ul>
           </div>
         </li>
@@ -54,20 +56,20 @@
             
                 <li id="emotion1" class="insteadLink">
                     <a href="signup" style="width: 100%; height: 100%;">
-                        Sign up 
+                        انشاء حساب 
                     </a>
             </li>
                 <li id="emotion1" class="insteadLink">
                     <a href="login" style="width: 100%; height: 100%;">
-                        Log in
+                        تسجيل دخول
                     </a>
                 </li>
         </div>
 
 
-        <a href="#search_global" id="focus_link">
+        <a href="index_en.html" id="focus_link">
           <div id="parent_search_nav" style="width: 100%; height: 100%">
-            <svg
+            <!-- <svg
               stroke-width="2"
               id="svg_srch_nav"
               stroke="currentColor"
@@ -81,7 +83,8 @@
                 stroke-linejoin="round"
                 stroke-linecap="round"
               ></path>
-            </svg>
+            </svg> -->
+            EN
           </div>
         </a>
 
@@ -99,64 +102,69 @@
 <div id="parent">
     <section id="defenition_section">
         <div id="elements">
-          <h1>Where You Will Spend Tonight?</h1>
-          <p id="info">Booking With Dbr 3Lia</p>
+          <h1>أين ستقيم الليلة؟</h1>
+          <p id="info">احجز مع دبر عليا</p>
         </div>
     </section>
+
     <section id="booking_table">
       <div id="table">
-        <p id="standards">Complet Gaps:</p>
+        <p id="standards">اكمل الفراغات:</p>
 
         <div class="flex">
 
           <div class="except_gab">
-            <input type="text" value="Newyork" class="gap">   <p class="title_gab"><i class="fa-solid fa-location-dot"></i>    Location</p>
+            <input type="text" id="location_value" class="gap po">   
+            <p class="title_gab"><i class="fa-solid fa-location-dot"></i>    الموقع</p>
           </div>
 
           <div class="except_gab">
-            <input class="gap" type="date"> <p class="title_gab"><i class="fa-regular fa-calendar-days"></i>   Booking Date</p>
+            <input class="gap" id="date_value" type="date"> <p class="title_gab"><i class="fa-regular fa-calendar-days"></i>   موعد الحجز</p>
           </div>
 
           <div class="except_gab">
             <div class="gap counter" type="button">
-              1
+              <span id="room_count" class="font_class"></span>
               <div class="flex_div">
-                <div class="pluser"><i class="fa-solid fa-minus"></i></div>
-                <div class="pluser"><i class="fa-solid fa-plus"></i></div>
+                <div class="pluser minus"><i class="fa-solid fa-minus"></i></div>
+                <div class="pluser plus"><i class="fa-solid fa-plus"></i></div>
               </div>
             </div>
-            <p class="title_gab"><i class="fa-solid fa-bed"></i>   Rooms</p>
+            <p class="title_gab"><i class="fa-solid fa-bed"></i>   الغرف </p>
           </div>
 
 
           <div class="except_gab">
             <div class="gap counter" type="button">
-              1
+              <span id="guest_count" class="font_class"></span>
               <div class="flex_div">
-                <div class="pluser"><i class="fa-solid fa-minus"></i></div>
-                <div class="pluser"><i class="fa-solid fa-plus"></i></div>
+                <div class="pluser minus_guest"><i class="fa-solid fa-minus"></i></div>
+                <div class="pluser plus_guest"><i class="fa-solid fa-plus"></i></div>
               </div>
             </div>
-            <p class="title_gab"><i class="fa-solid fa-user"></i>   Guests</p>
+            <p class="title_gab"><i class="fa-solid fa-user"></i>   ضيوف</p>
           </div>
 
         </div>
 
         <div id="search">
-          <button>Search </button>
+          <button id="search_btn">ابحث </button>
         </div>
       </div>
 
-      <div id="google_power_search">Search With Google?
+      
+      <div id="google_power_search"><label for="check_box">ابحث بستخدام محرك غوغل؟</label>
 
         <div class="checkbox-wrapper">
-          <input checked="" type="checkbox">
+          <input checked="" id="check_box" type="checkbox">
           <svg viewBox="0 0 35.6 35.6">
             <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
             <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
             <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
           </svg>
+        
         </div>
+      
       </div>
     </section>
   </div>
@@ -166,72 +174,72 @@
 
     <div class="fraction">
       <img src="img/CompareDesktop.svg" alt="img_helper_defenation">
-      <h2>Competes with international sites</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam unde maxime dolorem .</p>
+      <h2>ينافس المواقع العالمية</h2>
+      <p>ينافس المواقع العالمية في جودة الاسعار والخدمات المتاحة لديه ويتوفر لى جميع مناطق العالم</p>
     </div>
 
 
     <div class="fraction">
       <img src="img/SaveDesktop.svg" alt="img_helper_defenation">
-      <h2>So Economic</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam unde maxime dolorem .</p>
+      <h2>مقتصد جدا</h2>
+      <p>يوفر دبر عليا خدمة جد عالية وبأسعار خيالية</p>
     </div>
 
 
     <div class="fraction">
       <img src="img/SearchDesktop.svg" alt="img_helper_defenation">
-      <h2>Search Speed</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam unde maxime dolorem .</p>
+      <h2>سرعة البحث</h2>
+      <p>يتمتع محرك دبر عليا على بحث فائق السرعة للمعلومة المبحوث عليها</p>
     </div>
   </article>
 
 
   <article id="capitals" class="swiper">
-    <h1 id="capital_title">Hotel 5 Stars In Capitals</h1>
+    <h1 id="capital_title">فنادق 5 نجوم في أفضل العواصم</h1>
 
     <section id="capitals_slide" class="swiper-wrapper">
 
       <div class="capital swiper-slide">
         <div class="shadow"></div>
-        <img src="img/ALG.webp" alt="Alger">
-        <p class="capital_name">Alger</p>
+        <img src="img/kl.jpg" alt="Alger">
+        <p class="capital_name">الجزائر</p>
       </div>
 
       <div class="capital swiper-slide">
         <div class="shadow"></div>
-        <img src="img/warsaw.jpg" alt="Warsaw">
-        <p class="capital_name">Warsaw</p>
+        <img src="img/oran.jpg" alt="Warsaw">
+        <p class="capital_name">وهران</p>
       </div>
 
       <div class="capital swiper-slide">
         <div class="shadow"></div>
-        <img src="img/pikin.jpg" alt="Pekin">
-        <p class="capital_name">Pekin</p>
+        <img src="img/ss.jpg" alt="Pekin">
+        <p class="capital_name">سطيف</p>
       </div>
 
       <div class="capital swiper-slide">
         <div class="shadow"></div>
-        <img src="img/newyork.jpg" alt="Newyork">
-        <p class="capital_name">Newyork</p>
+        <img src="img/tz.jpg" alt="Newyork">
+        <p class="capital_name">تيزي وزو</p>
       </div>
 
       <div class="capital swiper-slide">
         <div class="shadow"></div>
-        <img src="img/berline.jpg" alt="Berlin">
-        <p class="capital_name">Berlin</p>
+        <img src="img/tm.jpg" alt="Berlin">
+        <p class="capital_name">ترمنراست</p>
       </div>
 
-
-      <div class="capital swiper-slide">
-        <div class="shadow"></div>
-        <img src="img/ALG.webp" alt="Warsaw">
-        <p class="capital_name">Alger</p>
-      </div>
 
       <div class="capital swiper-slide">
         <div class="shadow"></div>
         <img src="img/ALG.webp" alt="Warsaw">
-        <p class="capital_name">Alger</p>
+        <p class="capital_name">الجزائر</p>
+      </div>
+
+      <div class="capital swiper-slide">
+        <div class="shadow"></div>
+        <img src="img/ss.jpg" alt="Warsaw">
+        <p class="capital_name">الجزائر</p>
       </div>
 
 
@@ -245,74 +253,74 @@
 
   
   <article id="places">
-    <h2 id="capital_title">Traveles</h2>
+    <h2 id="capital_title">أسفار وسفرات العالم</h2>
 
     <div id="suggests">
       <p class="suggest" style=" background:#ea45455c; color: var(--global-color);">Capitals</p>
-      <p class="suggest">Nature</p>
-      <p class="suggest">Jobs</p>
-      <p class="suggest">Universities</p>
-      <p class="suggest">Economech</p>
-      <p class="suggest">Chemestry</p>
+      <p class="suggest">طبيعة</p>
+      <p class="suggest">مناصب عمل</p>
+      <p class="suggest">جامعات</p>
+      <p class="suggest">دراسات ميكانيكية</p>
+      <p class="suggest">كيمياء</p>
     </div>
 
     <div id="storage_cards">
       <div class="card">
-        <img src="img/ALG.webp" alt="ALG">
+        <img src="img/tm.jpg" alt="ALG">
         <div>
-          <p class="title_trvl">Alger</p>
-          <p class="cntr">Algeria</p>
-          <p class="kind_trvl">Costs for a whole month</p>
+          <p class="title_trvl">الجزائر العاصمة</p>
+          <p class="cntr">الجزائر</p>
+          <p class="kind_trvl">السعر بالشهر</p>
           <p class="price">399$</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="img/berline.jpg" alt="ALG">
+        <img src="img/ss.jpg" alt="ALG">
         <div>
-          <p class="title_trvl">Berlin</p>
-          <p class="cntr">Germany</p>
-          <p class="kind_trvl">Costs for a whole month</p>
+          <p class="title_trvl">غرف</p>
+          <p class="cntr">الجزائر</p>
+          <p class="kind_trvl">السعر بالشهر</p>
           <p class="price">399$</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="img/moscow.jpg" alt="ALG">
+        <img src="img/oran.jpg" alt="ALG">
                 <div>
-          <p class="title_trvl">Moscow</p>
-          <p class="cntr">Russia</p>
-          <p class="kind_trvl">Costs for a whole month</p>
+          <p class="title_trvl">وهران</p>
+          <p class="cntr">الجزائر</p>
+          <p class="kind_trvl">السعر بالشهر</p>
           <p class="price">250.25$</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="img/newyork.jpg" alt="ALG">
+        <img src="img/tm.jpg" alt="ALG">
                 <div>
-          <p class="title_trvl">Newyork</p>
-          <p class="cntr">USA</p>
-          <p class="kind_trvl">Costs for a whole month</p>
+          <p class="title_trvl">تمنراست</p>
+          <p class="cntr">الجزائر</p>
+          <p class="kind_trvl">السعر بالشهر</p>
           <p class="price">899.99$</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="img/pikin.jpg" alt="ALG">
+        <img src="img/ALG.webp" alt="ALG">
                 <div>
-          <p class="title_trvl">Pekun</p>
-          <p class="cntr">China</p>
-          <p class="kind_trvl">Costs for a whole month</p>
+          <p class="title_trvl">الجزائر</p>
+          <p class="cntr">الجزائر</p>
+          <p class="kind_trvl">السعر بالشهر</p>
           <p class="price">399$</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="img/warsaw.jpg" alt="ALG">
+        <img src="img/tm.jpg" alt="ALG">
                 <div>
-          <p class="title_trvl">Warsaw</p>
-          <p class="cntr">Poland</p>
-          <p class="kind_trvl">Costs for a whole month</p>
+          <p class="title_trvl">ادرار</p>
+          <p class="cntr">الجزائر</p>
+          <p class="kind_trvl">السعر بالشهر</p>
           <p class="price">122$</p>
         </div>
       </div>
@@ -325,29 +333,29 @@
 
     <div id="uls">
       <ul class="links_footer">
-        <li class="links_footer title_links">WebSite</li>
-        <li class="links_footer">API</li>
-        <li class="links_footer">Servers</li>
-        <li class="links_footer">Hosts</li>
+        <li class="links_footer title_links">مواقع</li>
+        <li class="links_footer">سرفرات</li>
+        <li class="links_footer">خدمات</li>
+        <li class="links_footer">استضافات</li>
       </ul>
       <ul class="links_footer">
-        <li class="links_footer title_links">Company</li>
-        <li class="links_footer">In Poland</li>
-        <li class="links_footer">Poznan</li>
-        <li class="links_footer">Wall 68, West</li>
+        <li class="links_footer title_links">الشركة</li>
+        <li class="links_footer">في بولندا</li>
+        <li class="links_footer">بوزنان</li>
+        <li class="links_footer">شارع 68 غرب</li>
       </ul>
       <ul class="links_footer">
-        <li class="links_footer title_links">App</li>
-        <li class="links_footer">App Store</li>
-        <li class="links_footer">Play Store</li>
+        <li class="links_footer title_links">تطبيق</li>
+        <li class="links_footer">يتوفر في أب ستور</li>
+        <li class="links_footer">يتوفر في بلاي ستور</li>
 
       </ul>
       <ul class="links_footer">
-        <li class="links_footer title_links">Contact</li>
-        <li class="links_footer">Youtube</li>
-        <li class="links_footer">Linken</li>
-        <li class="links_footer">X</li>
-        <li class="links_footer">Facebook</li>
+        <li class="links_footer title_links">تواصل</li>
+        <li class="links_footer">يوتيوةب</li>
+        <li class="links_footer">لينكين</li>
+        <li class="links_footer">اكس</li>
+        <li class="links_footer">فيسبوك</li>
 
       </ul>
 
@@ -356,7 +364,7 @@
     <hr>
     
     <div id="last">
-      <p>@ 2024 Dbr 3Lia</p>
+      <p>@ 2024 دبر عليا</p>
       <p><i class="fa-brands fa-facebook mrg"></i> <i class="fa-brands fa-instagram mrg"></i> <i class="fa-brands fa-x-twitter mrg"></i></p>
     </div>
 
@@ -365,7 +373,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+
 
   </body>
 </html>

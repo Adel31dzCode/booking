@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/logo1-bg.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/result.css" />
+    <title>Dbr 3lia | Result Page</title>
+  </head>
+  <body>
+    <!-- NavBar Tag Start -->
+    <nav id="navbr">
+
+      <a href="../"><img id="navLink" src="img/logo1-bg.png" alt="logo" /></a>
+
+      <ul id="links">
+        <li id="emotion1" class="insteadLink">
+          Booking
+          <i class="fa-solid fa-sort-down"></i>
+
+          <div id="emotion2" class="popup">
+            <ul class="popupLinks">
+              <li class="poplinkinstead">hotels</li>
+              <hr class="bearLine" />
+              <li class="poplinkinstead">hotels</li>
+              <hr class="bearLine" />
+              <li class="poplinkinstead">hotels</li>
+            </ul>
+          </div>
+        </li>
+
+        <li id="emotion1" class="insteadLink">
+          Services <i class="fa-solid fa-sort-down"></i>
+
+          <div id="emotion2" class="popup">
+            <ul class="popupLinks">
+              <li class="poplinkinstead">traveling</li>
+              <hr class="bearLine" />
+              <li class="poplinkinstead">traveling</li>
+              <hr class="bearLine" />
+              <li class="poplinkinstead">traveling</li>
+            </ul>
+          </div>
+        </li>
+
+        <div id="parent_login">
+          <li id="emotion1" class="insteadLink">
+            <a href="signup" style="width: 100%; height: 100%"> Sign up </a>
+          </li>
+          <li id="emotion1" class="insteadLink">
+            <a href="login" style="width: 100%; height: 100%"> Log in </a>
+          </li>
+        </div>
+
+        <a href="../index.html" id="focus_link">
+          <div id="parent_search_nav" style="width: 100%; height: 100%">
+            <!-- <svg
+              stroke-width="2"
+              id="svg_srch_nav"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="swap-on"
+            >
+              <path
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              ></path>
+            </svg> -->
+            AR
+          </div>
+        </a>
+
+        <div id="parent_search_nav" class="moon_btn modes">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+      </ul>
+    </nav>
+    <!-- NavBar Tag End -->
+
+    <!-- Screen Tag Start -->
+    <article id="screen_destinataion">
+      <div id="dist">
+        <span class="gab_title"><i class="fa-solid fa-location-dot"></i>   Distnation: </span>
+        <input type="text" class="gab" id="distination_inp"/>
+      </div>
+
+      <div id="dist">
+        <span class="gab_title"><i class="fa-regular fa-calendar-days"></i>  Date: </span>
+        <input type="date" class="gab" id="date_inp"/>
+      </div>
+
+      <div class="except_gab">
+        <div class="gab gab_edition" type="button">
+          <span class="num_gab" id="room_value">1</span>
+          <div class="flex_div">
+            <div class="pluser minus"><i class="fa-solid fa-minus"></i></div>
+            <div class="pluser plus"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+        <p class="except_title"><i class="fa-solid fa-bed"></i> Rooms:</p>
+      </div>
+
+      <div class="except_gab">
+        <div class="gab gab_edition" type="button">
+          <span class="num_gab" id="guest_value">1</span>
+          <div class="flex_div">
+            <div class="pluser minus"><i class="fa-solid fa-minus"></i></div>
+            <div class="pluser plus"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+        <p class="except_title"><i class="fa-solid fa-bed"></i> Guests:</p>
+      </div>
+
+      <div id="continer_icon">
+        <i class="fa-solid fa-magnifying-glass"  id="search_icon"></i>
+      </div>
+
+    </article>
+    <!-- Screen Tag End -->
+
+
+    <div id="big_parent">
+
+      <aside>
+        <h1 id="title_aside"></h1>
+      </aside>
+
+
+      <div id="offers_parent">
+
+        <div id="uls">
+          <li class="search_standar selected">Recommonded</li>
+          <li class="search_standar">Prices</li>
+          <li class="search_standar">Open Time</li>
+          <li class="search_standar">Places</li>
+          <li class="search_standar">Streets</li>
+          <li class="search_standar">Weather</li>
+
+        </div>
+
+        <article id="offers">
+          <p id="title_offers">Hotels Are Available:</p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+
+    <script src="js/result.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  </body>
+</html>
